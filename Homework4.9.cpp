@@ -14,12 +14,14 @@ int main(){
 		}else {
 			printf("Khong hop le"); 
 		} 
+		break;
 		case 4 : case 6 : case 9 : case 11 :
 		if(day == 30){
 			printf("Hop le"); 
 		} else {
 			printf("Khong hop le"); 
 		} 
+		break;
 		case 2 :
 		if((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)){
 			if(day == 28){
@@ -33,7 +35,9 @@ int main(){
 			} else {
 				printf("Khong hop le"); 
 			} 
-		} 
+		}break;
+		default:
+		 printf("Khong hop le");
 	} 
 	return 0; 
 } 
