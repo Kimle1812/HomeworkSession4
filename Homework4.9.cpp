@@ -35,7 +35,8 @@ int main(){
 			} else {
 				printf("Khong hop le"); 
 			} 
-		}break;
+		}
+		break;
 		default:
 		 printf("Khong hop le");
 	} 
