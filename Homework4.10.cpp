@@ -1,28 +1,28 @@
 #include<stdio.h>
 int main (){
-	int num1, num2, num3;
+	int a, b, c;
 	printf("Nhap so nguyen thu nhat ");
-	scanf("%d", &num1);
+	scanf("%d", &a);
 	printf("Nhap so nguyen thu hai ");
-	scanf("%d", &num2);
+	scanf("%d", &b);
 	printf("Nhap so nguyen thu ba ");
-	scanf("%d", &num3);
+	scanf("%d", &c);
 	int index;
-	if (num1 > num2){
-		index = num1;
-		num1 = num2;
-		num2 = index;
+	if (a > b){
+		index = a;
+		a = b;
+		b = index;
 	}
-	if (num1 > num3){
-		index = num1;
-		num1 = num3;
-		num3 = index;
+	if (a > c){
+		index = a;
+		a = c;
+		c = index;
 	}
-	if (num2 > num3){
-		index = num2;
-		num2 = num3;
-		num3 = index;
+	if (b > c){
+		index = b;
+		b = c;
+		c = index;
 	}
-	printf("Cac so theo thu tu tu be den lon la %d, %d, %d\n", num1, num2, num3);
+	printf("Cac so theo thu tu tu be den lon la %d, %d, %d\n", a, b, c);
 	return 0;
 }
